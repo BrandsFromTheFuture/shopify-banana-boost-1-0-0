@@ -1,0 +1,58 @@
+/*
+custom.css
+
+Use this file to add custom CSS to your theme.
+Make sure to uncomment out the line in theme.liquid so that this css file is loaded.
+
+For more information check out this help guide:
+https://help.switchthemes.co/shapes/advanced/custom-css.html
+*/
+/* SCROLL BAR */
+::-webkit-scrollbar {
+    width: 9px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 5px 5px 5px 15px #0000;
+    border-radius: 1px;
+}
+::-webkit-scrollbar-track:hover {
+    box-shadow: inset 5px 5px 5px 15px #F7602B;
+}
+::-webkit-scrollbar-thumb {
+    background: #F7602B;
+    border-radius: 1px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #0000;
+}
+
+.swiper-container-horizontal .swiper-scrollbar {
+  position: absolute;
+  left: 1%;
+  bottom: -2px;
+  z-index: 50;
+  height: 3px;
+  width: 98%;
+}
+
+.swiper-container-vertical .swiper-scrollbar {
+  position: absolute;
+  right: 3px;
+  top: 1%;
+  z-index: 50;
+  width: 5px;
+  height: 98%;
+}
+
+.swiper-scrollbar-drag {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: rgba(0, 0, 0, 0.5);
+  left: 0;
+  top: 0;
+}
+
+.swiper-scrollbar-cursor-drag {
+  cursor: move;
+}
