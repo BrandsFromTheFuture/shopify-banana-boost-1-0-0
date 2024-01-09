@@ -89,7 +89,7 @@
       >
         {{ current_variant.price | money }}
       </span> {% endcomment %}
-      <span>&nbsp;&#8211;&nbsp;</span><span>{{ money_price | money }}</span>
+      <h3>{{ money_price | money }}</h3>
       
       {% if product.compare_at_price_max > product.price %}
         <template x-if="current_variant && product.compare_at_price_max && current_variant.compare_at_price > current_variant.price">
