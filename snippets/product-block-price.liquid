@@ -12,7 +12,7 @@
 >
 
   <span class="sr-only">{{ 'products.general.regular_price' | t }}</span>
-  <span
+  {% comment %} <span
     class="text-scheme-text {{ price_text_size }}"
     x-html="formatMoney(current_price)"
     :class="
@@ -22,7 +22,8 @@
     data-product-price
   >
     {{ current_variant.price | money }}
-  </span>
+  </span> {% endcomment %}
+  <span>&nbsp;&#8211;&nbsp;</span><span>{{ current_variant.price | money }}</span>
 
   {% if product.compare_at_price_max > product.price %}
     <template x-if="current_variant && product.compare_at_price_max && current_variant.compare_at_price > current_variant.price">
